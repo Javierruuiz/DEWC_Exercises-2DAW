@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFA500; 
+    color: white;
+}
+
+.cronometro {
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#tiempo {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    color: #FFA500;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFE4B5; /* Naranja claro */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Chart</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(() => {
+            const elementosCambio = [
+                google.visualization.arrayToDataTable([
+                    ["Element", "Votes", { role: "style" }],
+                    ["PP", 33.06, "#0059fa"],
+                    ["PSOE", 31.61, "#fa0400"],
+                    ["VOX", 12.49, "#1ffa00"],
+                    ["SUMAR", 12.30, "#fa00eb"],
+                    ["ERC", 1.9, "#ffe301"],
+                    ["JUNTS", 1.6, "#01fffd"]
+                ]),
+                google.visualization.arrayToDataTable([
+                    ["Element", "Votes", { role: "style" }],
+                    ["PP", 30.00, "#0059fa"],
+                    ["PSOE", 35.00, "#fa0400"],
+                    ["VOX", 15.00, "#1ffa00"],
+                    ["SUMAR", 10.00, "#fa00eb"],
+                    ["ERC", 5.00, "#ffe301"],
+                    ["JUNTS", 5.00, "#01fffd"]
+                ])
+            ];
+
+            let graficas = 0; 
+
+            const drawChart = () => {
+                const chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+                chart.draw(elementosCambio[graficas], {
+                    title: "VOTOS NACIONALES",
+                    width: 600,
+                    height: 400,
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" }
+                });
+            };
+
+            drawChart();
+
+            setInterval(() => {
+              graficas = 1 - graficas;
+                drawChart(); 
+            }, 1000); 
+        });
+    </script>
+</head>
+<body>
+    <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <form id="formularioUsuario">
+      <label for="usuario">username</label>
+      <input type="text" id="usuario" name="usuario" required>
+      <ul class="requisitos">
+        <li id="minuscula" class="invalido">1 lowercase character</li>
+        <li id="mayuscula" class="invalido">1 uppercase character</li>
+        <li id="longitudMinima" class="invalido">6 minimum characters</li>
+      </ul>
+      <button type="submit" id="botonEnviar" disabled>Submit</button>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

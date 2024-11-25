@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(70, 130, 180), rgb(135, 206, 250));
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.marcador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgb(100, 149, 237), rgb(70, 130, 180));
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px 20px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#container {
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    background: radial-gradient(circle, rgb(135, 206, 250) 60%, rgb(70, 130, 180));
+    width: 1400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#rectangulo1, #rectangulo2 {
+    fill: rgb(0, 0, 255);
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+#pelota {
+    fill: rgb(30, 144, 255);
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    animation: glow 1s infinite alternate;
+}
+
+
+

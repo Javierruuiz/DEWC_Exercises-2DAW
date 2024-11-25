@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a9acef;
+}
+#titulo{
+    color: #a9acef;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#imagen {
+    display: flex;
+}
+
+#imagen img {
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.contenedor {
+    width: 700px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+.contenedor-formulario h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.contenedor-formulario p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.grupo-primera{
+    margin-bottom: 15px;
+    text-align: left;
+    display:contents;
+}
+.grupo-segundo{
+    margin-bottom: 15px;
+    text-align: left;
+    display:contents;
+}
+.grupo-tercero{
+    margin-bottom: 15px;
+    text-align: left;
+    display:contents;
+}
+.grupo-primera input {
+    width: calc(40% - 10px);
+    padding: 8px;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.grupo-segundo input {
+    width: calc(30% - 10px);
+    padding: 8px;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.grupo-tercero input {
+    width: calc(30% - 10px);
+    padding: 8px;
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.grupo-casilla {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.grupo-casilla input {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #8f94fb;
+}
+
+.error {
+    border-color: red;
+}
+
+.mensaje-error {
+    color: red;
+    font-size: 12px;
+}
