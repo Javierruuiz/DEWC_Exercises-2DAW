@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f9fc;
+    font-family: Arial, sans-serif;
+    padding: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nuevaNota {
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    border: 2px solid #00bfa5;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #00bfa5;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nuevaNota img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.nuevaNota:hover {
+    background-color: #00bfa5;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+.note-row {
+    background-color: #ffffff;
+    width: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    transition: transform 0.2s ease;
+}
+
+.note-row:hover {
+    transform: scale(1.02);
+}
+
+.note-title {
+    height: 50px;
+    padding: 10px;
+    background-color: #eaf4fc;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    text-align: left;
+}
+
+.note-editor {
+    height: 200px;
+    padding: 15px;
+    font-size: 14px;
+    color: #555555;
+    border: none;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    background-color: #ffffff;
+}
+
+.note-editor:focus {
+    border: 1px solid #00bfa5;
+    box-shadow: inset 0px 0px 5px rgba(0, 191, 165, 0.5);
+}
+
+.note-controls {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f7f9fc;
+    border-top: 1px solid #ddd;
+}
+
+.note-controls img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.note-controls img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
